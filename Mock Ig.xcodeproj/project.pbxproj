@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		297FCB52286A4795007F6626 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB51286A4795007F6626 /* AppDelegate.m */; };
 		297FCB55286A4795007F6626 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB54286A4795007F6626 /* SceneDelegate.m */; };
-		297FCB58286A4795007F6626 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB57286A4795007F6626 /* ViewController.m */; };
 		297FCB5B286A4795007F6626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297FCB59286A4795007F6626 /* Main.storyboard */; };
 		297FCB5E286A4795007F6626 /* Mock_Ig.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB5C286A4795007F6626 /* Mock_Ig.xcdatamodeld */; };
 		297FCB60286A4796007F6626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297FCB5F286A4796007F6626 /* Assets.xcassets */; };
@@ -18,6 +17,9 @@
 		297FCB70286A4796007F6626 /* Mock_IgTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB6F286A4796007F6626 /* Mock_IgTests.m */; };
 		297FCB7A286A4796007F6626 /* Mock_IgUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB79286A4796007F6626 /* Mock_IgUITests.m */; };
 		297FCB7C286A4796007F6626 /* Mock_IgUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB7B286A4796007F6626 /* Mock_IgUITestsLaunchTests.m */; };
+		299E56C0286A4E600023CBEE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299E56BF286A4E600023CBEE /* LoginViewController.m */; };
+		299E56C3286A4ED10023CBEE /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299E56C2286A4ED10023CBEE /* FeedViewController.m */; };
+		299E56C6286A4FFF0023CBEE /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299E56C5286A4FFF0023CBEE /* ComposeViewController.m */; };
 		4248D73ABC9FEA9FB1914082 /* Pods_Mock_Ig_Mock_IgUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230B8047D878C1AF8F518170 /* Pods_Mock_Ig_Mock_IgUITests.framework */; };
 		89BB8B12CCB8A04C4E701DDB /* Pods_Mock_IgTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62AFD8D01C3C2177BF08DA7F /* Pods_Mock_IgTests.framework */; };
 		F6E10674213004CA8898F361 /* Pods_Mock_Ig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCAA568ABD9AE79F73FC005 /* Pods_Mock_Ig.framework */; };
@@ -47,8 +49,6 @@
 		297FCB51286A4795007F6626 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		297FCB53286A4795007F6626 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		297FCB54286A4795007F6626 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		297FCB56286A4795007F6626 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		297FCB57286A4795007F6626 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		297FCB5A286A4795007F6626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		297FCB5D286A4795007F6626 /* Mock_Ig.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mock_Ig.xcdatamodel; sourceTree = "<group>"; };
 		297FCB5F286A4796007F6626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +60,12 @@
 		297FCB75286A4796007F6626 /* Mock IgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mock IgUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		297FCB79286A4796007F6626 /* Mock_IgUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mock_IgUITests.m; sourceTree = "<group>"; };
 		297FCB7B286A4796007F6626 /* Mock_IgUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mock_IgUITestsLaunchTests.m; sourceTree = "<group>"; };
+		299E56BE286A4E600023CBEE /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		299E56BF286A4E600023CBEE /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		299E56C1286A4ED10023CBEE /* FeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		299E56C2286A4ED10023CBEE /* FeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		299E56C4286A4FFF0023CBEE /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		299E56C5286A4FFF0023CBEE /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
 		2E7667B091ECE8148EF76EB5 /* Pods-Mock IgTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock IgTests.release.xcconfig"; path = "Target Support Files/Pods-Mock IgTests/Pods-Mock IgTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BE69CD961C6433D06050093 /* Pods-Mock Ig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock Ig.debug.xcconfig"; path = "Target Support Files/Pods-Mock Ig/Pods-Mock Ig.debug.xcconfig"; sourceTree = "<group>"; };
 		62AFD8D01C3C2177BF08DA7F /* Pods_Mock_IgTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mock_IgTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +114,6 @@
 				952CADA592650C175527B89B /* Pods-Mock IgTests.debug.xcconfig */,
 				2E7667B091ECE8148EF76EB5 /* Pods-Mock IgTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -141,9 +146,13 @@
 				297FCB51286A4795007F6626 /* AppDelegate.m */,
 				297FCB53286A4795007F6626 /* SceneDelegate.h */,
 				297FCB54286A4795007F6626 /* SceneDelegate.m */,
-				297FCB56286A4795007F6626 /* ViewController.h */,
-				297FCB57286A4795007F6626 /* ViewController.m */,
 				297FCB59286A4795007F6626 /* Main.storyboard */,
+				299E56C4286A4FFF0023CBEE /* ComposeViewController.h */,
+				299E56C5286A4FFF0023CBEE /* ComposeViewController.m */,
+				299E56C1286A4ED10023CBEE /* FeedViewController.h */,
+				299E56C2286A4ED10023CBEE /* FeedViewController.m */,
+				299E56BE286A4E600023CBEE /* LoginViewController.h */,
+				299E56BF286A4E600023CBEE /* LoginViewController.m */,
 				297FCB5F286A4796007F6626 /* Assets.xcassets */,
 				297FCB61286A4796007F6626 /* LaunchScreen.storyboard */,
 				297FCB64286A4796007F6626 /* Info.plist */,
@@ -419,10 +428,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				297FCB66286A4796007F6626 /* main.m in Sources */,
-				297FCB58286A4795007F6626 /* ViewController.m in Sources */,
 				297FCB5E286A4795007F6626 /* Mock_Ig.xcdatamodeld in Sources */,
 				297FCB52286A4795007F6626 /* AppDelegate.m in Sources */,
 				297FCB55286A4795007F6626 /* SceneDelegate.m in Sources */,
+				299E56C6286A4FFF0023CBEE /* ComposeViewController.m in Sources */,
+				299E56C3286A4ED10023CBEE /* FeedViewController.m in Sources */,
+				299E56C0286A4E600023CBEE /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
