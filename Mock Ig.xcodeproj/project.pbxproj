@@ -18,6 +18,9 @@
 		297FCB70286A4796007F6626 /* Mock_IgTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB6F286A4796007F6626 /* Mock_IgTests.m */; };
 		297FCB7A286A4796007F6626 /* Mock_IgUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB79286A4796007F6626 /* Mock_IgUITests.m */; };
 		297FCB7C286A4796007F6626 /* Mock_IgUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB7B286A4796007F6626 /* Mock_IgUITestsLaunchTests.m */; };
+		4248D73ABC9FEA9FB1914082 /* Pods_Mock_Ig_Mock_IgUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230B8047D878C1AF8F518170 /* Pods_Mock_Ig_Mock_IgUITests.framework */; };
+		89BB8B12CCB8A04C4E701DDB /* Pods_Mock_IgTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62AFD8D01C3C2177BF08DA7F /* Pods_Mock_IgTests.framework */; };
+		F6E10674213004CA8898F361 /* Pods_Mock_Ig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCAA568ABD9AE79F73FC005 /* Pods_Mock_Ig.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230B8047D878C1AF8F518170 /* Pods_Mock_Ig_Mock_IgUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mock_Ig_Mock_IgUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		297FCB4D286A4795007F6626 /* Mock Ig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mock Ig.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		297FCB50286A4795007F6626 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		297FCB51286A4795007F6626 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +60,14 @@
 		297FCB75286A4796007F6626 /* Mock IgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mock IgUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		297FCB79286A4796007F6626 /* Mock_IgUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mock_IgUITests.m; sourceTree = "<group>"; };
 		297FCB7B286A4796007F6626 /* Mock_IgUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mock_IgUITestsLaunchTests.m; sourceTree = "<group>"; };
+		2E7667B091ECE8148EF76EB5 /* Pods-Mock IgTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock IgTests.release.xcconfig"; path = "Target Support Files/Pods-Mock IgTests/Pods-Mock IgTests.release.xcconfig"; sourceTree = "<group>"; };
+		5BE69CD961C6433D06050093 /* Pods-Mock Ig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock Ig.debug.xcconfig"; path = "Target Support Files/Pods-Mock Ig/Pods-Mock Ig.debug.xcconfig"; sourceTree = "<group>"; };
+		62AFD8D01C3C2177BF08DA7F /* Pods_Mock_IgTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mock_IgTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF403F65DD7FB908FE905F3 /* Pods-Mock Ig-Mock IgUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock Ig-Mock IgUITests.debug.xcconfig"; path = "Target Support Files/Pods-Mock Ig-Mock IgUITests/Pods-Mock Ig-Mock IgUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		952CADA592650C175527B89B /* Pods-Mock IgTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock IgTests.debug.xcconfig"; path = "Target Support Files/Pods-Mock IgTests/Pods-Mock IgTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BCAA568ABD9AE79F73FC005 /* Pods_Mock_Ig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mock_Ig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2FAD0A0463C01F9691737E6 /* Pods-Mock Ig-Mock IgUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock Ig-Mock IgUITests.release.xcconfig"; path = "Target Support Files/Pods-Mock Ig-Mock IgUITests/Pods-Mock Ig-Mock IgUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ABED07E60E0F0C3662BD1B3F /* Pods-Mock Ig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock Ig.release.xcconfig"; path = "Target Support Files/Pods-Mock Ig/Pods-Mock Ig.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E10674213004CA8898F361 /* Pods_Mock_Ig.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BB8B12CCB8A04C4E701DDB /* Pods_Mock_IgTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,12 +91,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4248D73ABC9FEA9FB1914082 /* Pods_Mock_Ig_Mock_IgUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00BF5840BF9FFE9AA67C0173 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BE69CD961C6433D06050093 /* Pods-Mock Ig.debug.xcconfig */,
+				ABED07E60E0F0C3662BD1B3F /* Pods-Mock Ig.release.xcconfig */,
+				7EF403F65DD7FB908FE905F3 /* Pods-Mock Ig-Mock IgUITests.debug.xcconfig */,
+				A2FAD0A0463C01F9691737E6 /* Pods-Mock Ig-Mock IgUITests.release.xcconfig */,
+				952CADA592650C175527B89B /* Pods-Mock IgTests.debug.xcconfig */,
+				2E7667B091ECE8148EF76EB5 /* Pods-Mock IgTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		297FCB44286A4795007F6626 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +119,8 @@
 				297FCB6E286A4796007F6626 /* Mock IgTests */,
 				297FCB78286A4796007F6626 /* Mock IgUITests */,
 				297FCB4E286A4795007F6626 /* Products */,
+				00BF5840BF9FFE9AA67C0173 /* Pods */,
+				8BC0EBA0DE2D7B7BB5D88AE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +170,16 @@
 			path = "Mock IgUITests";
 			sourceTree = "<group>";
 		};
+		8BC0EBA0DE2D7B7BB5D88AE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BCAA568ABD9AE79F73FC005 /* Pods_Mock_Ig.framework */,
+				230B8047D878C1AF8F518170 /* Pods_Mock_Ig_Mock_IgUITests.framework */,
+				62AFD8D01C3C2177BF08DA7F /* Pods_Mock_IgTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 297FCB7F286A4796007F6626 /* Build configuration list for PBXNativeTarget "Mock Ig" */;
 			buildPhases = (
+				AA35A5832B13CB31130CD8D6 /* [CP] Check Pods Manifest.lock */,
 				297FCB49286A4795007F6626 /* Sources */,
 				297FCB4A286A4795007F6626 /* Frameworks */,
 				297FCB4B286A4795007F6626 /* Resources */,
+				7A3A8222442F5AB3827E432B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 297FCB82286A4796007F6626 /* Build configuration list for PBXNativeTarget "Mock IgTests" */;
 			buildPhases = (
+				CBEB9E011890CD8D17EF9287 /* [CP] Check Pods Manifest.lock */,
 				297FCB67286A4796007F6626 /* Sources */,
 				297FCB68286A4796007F6626 /* Frameworks */,
 				297FCB69286A4796007F6626 /* Resources */,
@@ -181,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 297FCB85286A4796007F6626 /* Build configuration list for PBXNativeTarget "Mock IgUITests" */;
 			buildPhases = (
+				27AE7D97B0EF4C8F5A8E5C30 /* [CP] Check Pods Manifest.lock */,
 				297FCB71286A4796007F6626 /* Sources */,
 				297FCB72286A4796007F6626 /* Frameworks */,
 				297FCB73286A4796007F6626 /* Resources */,
+				DAAD3E97A714503703A8C77B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +309,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27AE7D97B0EF4C8F5A8E5C30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mock Ig-Mock IgUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A3A8222442F5AB3827E432B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mock Ig/Pods-Mock Ig-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mock Ig/Pods-Mock Ig-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mock Ig/Pods-Mock Ig-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA35A5832B13CB31130CD8D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mock Ig-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBEB9E011890CD8D17EF9287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mock IgTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAAD3E97A714503703A8C77B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mock Ig-Mock IgUITests/Pods-Mock Ig-Mock IgUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mock Ig-Mock IgUITests/Pods-Mock Ig-Mock IgUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mock Ig-Mock IgUITests/Pods-Mock Ig-Mock IgUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		297FCB49286A4795007F6626 /* Sources */ = {
@@ -441,6 +590,7 @@
 		};
 		297FCB80286A4796007F6626 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE69CD961C6433D06050093 /* Pods-Mock Ig.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,6 +617,7 @@
 		};
 		297FCB81286A4796007F6626 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABED07E60E0F0C3662BD1B3F /* Pods-Mock Ig.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,6 +644,7 @@
 		};
 		297FCB83286A4796007F6626 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 952CADA592650C175527B89B /* Pods-Mock IgTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +662,7 @@
 		};
 		297FCB84286A4796007F6626 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7667B091ECE8148EF76EB5 /* Pods-Mock IgTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +680,7 @@
 		};
 		297FCB86286A4796007F6626 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF403F65DD7FB908FE905F3 /* Pods-Mock Ig-Mock IgUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -542,6 +696,7 @@
 		};
 		297FCB87286A4796007F6626 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2FAD0A0463C01F9691737E6 /* Pods-Mock Ig-Mock IgUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
