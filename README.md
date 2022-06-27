@@ -1,6 +1,6 @@
-# Project 3 - *Name of App Here*
+# Project 3 - *Mock Instagram*
 
-**Name of your app** is a photo sharing app using Parse as its backend.
+**Mock Instagram** is a photo sharing app using Parse as its backend.
 
 Time spent: **X** hours spent in total
 
@@ -8,7 +8,7 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] User can sign up to create a new account using Parse authentication
+- [x] User can sign up to create a new account using Parse authentication
 - [ ] User can log in and log out of his or her account
 - [ ] The current signed in user is persisted across app restarts
 - [ ] User can take a photo, add a caption, and post it to "Instagram"
@@ -35,7 +35,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Users are alerted if there is a sign-up error or a login error; including if they input an empty username or password.
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 

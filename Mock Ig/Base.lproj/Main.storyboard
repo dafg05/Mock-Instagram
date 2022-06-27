@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,7 @@
         <!--Feed View Controller-->
         <scene sceneID="4Fg-Op-mcQ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="dct-tT-yBj" customClass="FeedViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedView" modalPresentationStyle="fullScreen" id="dct-tT-yBj" customClass="FeedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t6C-XY-5JF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,22 @@
                         <viewLayoutGuide key="safeArea" id="Jze-tu-IsT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NV6-AA-oNn"/>
+                    <navigationItem key="navigationItem" id="NV6-AA-oNn">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Wc7-Xa-fMV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="6oQ-Di-BP5">
+                                <rect key="frame" x="20" y="4.5" width="92" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="didTapLogout:" destination="dct-tT-yBj" eventType="touchUpInside" id="jMA-nQ-Xpk"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="didTapLogout:" destination="dct-tT-yBj" id="Unh-DO-Toi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="hDb-qL-gEo" kind="presentation" id="9G3-e3-Hjc"/>
                     </connections>
@@ -148,7 +163,7 @@
         <!--Feed-->
         <scene sceneID="rJJ-aB-OrQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="iRv-Uh-O0X" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="iRv-Uh-O0X" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Feed" id="dpr-Wm-S2G"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dqq-zo-2ct">

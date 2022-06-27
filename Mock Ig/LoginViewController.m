@@ -79,6 +79,7 @@ NSString * const EMPTY_FIELDS_ERROR_MSSG = @"Either your username or password is
     if ([self.usernameField.text isEqual:@""] || [self.passwordField.text isEqual:@""]){
         [self loginAlert:@"Login Error" :EMPTY_FIELDS_ERROR_MSSG];
     }else{
+        NSLog(@"logging in!");
         [self loginUser];
     }
 }
