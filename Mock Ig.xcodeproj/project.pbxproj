@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297D8652286CB1AF00C7FE95 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 297D8651286CB1AF00C7FE95 /* PostCell.m */; };
+		297D8658286CDA8700C7FE95 /* PostDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297D8657286CDA8700C7FE95 /* PostDetailsViewController.m */; };
+		297D865A286D068C00C7FE95 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297D8659286D068C00C7FE95 /* Keys.plist */; };
 		297FCB52286A4795007F6626 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB51286A4795007F6626 /* AppDelegate.m */; };
 		297FCB55286A4795007F6626 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FCB54286A4795007F6626 /* SceneDelegate.m */; };
 		297FCB5B286A4795007F6626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297FCB59286A4795007F6626 /* Main.storyboard */; };
@@ -22,7 +25,6 @@
 		299E56C6286A4FFF0023CBEE /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299E56C5286A4FFF0023CBEE /* ComposeViewController.m */; };
 		299EBAB7286BA19600CD3DEF /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 299EBAB9286BA19600CD3DEF /* Billabong.ttf */; };
 		299EBABD286BA8F600CD3DEF /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 299EBABC286BA8F600CD3DEF /* Post.m */; };
-		29A8A564286BFFEA00D6C598 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29A8A563286BFFEA00D6C598 /* Keys.plist */; };
 		4248D73ABC9FEA9FB1914082 /* Pods_Mock_Ig_Mock_IgUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230B8047D878C1AF8F518170 /* Pods_Mock_Ig_Mock_IgUITests.framework */; };
 		89BB8B12CCB8A04C4E701DDB /* Pods_Mock_IgTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62AFD8D01C3C2177BF08DA7F /* Pods_Mock_IgTests.framework */; };
 		F6E10674213004CA8898F361 /* Pods_Mock_Ig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCAA568ABD9AE79F73FC005 /* Pods_Mock_Ig.framework */; };
@@ -47,6 +49,11 @@
 
 /* Begin PBXFileReference section */
 		230B8047D878C1AF8F518170 /* Pods_Mock_Ig_Mock_IgUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mock_Ig_Mock_IgUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		297D8650286CB1AF00C7FE95 /* PostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PostCell.h; path = "Mock Ig/ViewControllers/PostCell.h"; sourceTree = SOURCE_ROOT; };
+		297D8651286CB1AF00C7FE95 /* PostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PostCell.m; path = "Mock Ig/ViewControllers/PostCell.m"; sourceTree = SOURCE_ROOT; };
+		297D8656286CDA8700C7FE95 /* PostDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDetailsViewController.h; sourceTree = "<group>"; };
+		297D8657286CDA8700C7FE95 /* PostDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostDetailsViewController.m; sourceTree = "<group>"; };
+		297D8659286D068C00C7FE95 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		297FCB4D286A4795007F6626 /* Mock Ig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mock Ig.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		297FCB50286A4795007F6626 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		297FCB51286A4795007F6626 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,7 +80,6 @@
 		299EBABA286BA45A00CD3DEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Billabong.ttf; sourceTree = "<group>"; };
 		299EBABB286BA8F600CD3DEF /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		299EBABC286BA8F600CD3DEF /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
-		29A8A563286BFFEA00D6C598 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Keys.plist; sourceTree = SOURCE_ROOT; };
 		2E7667B091ECE8148EF76EB5 /* Pods-Mock IgTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock IgTests.release.xcconfig"; path = "Target Support Files/Pods-Mock IgTests/Pods-Mock IgTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BE69CD961C6433D06050093 /* Pods-Mock Ig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock Ig.debug.xcconfig"; path = "Target Support Files/Pods-Mock Ig/Pods-Mock Ig.debug.xcconfig"; sourceTree = "<group>"; };
 		62AFD8D01C3C2177BF08DA7F /* Pods_Mock_IgTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mock_IgTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +134,7 @@
 		297FCB44286A4795007F6626 = {
 			isa = PBXGroup;
 			children = (
+				297D8659286D068C00C7FE95 /* Keys.plist */,
 				297FCB4F286A4795007F6626 /* Mock Ig */,
 				297FCB6E286A4796007F6626 /* Mock IgTests */,
 				297FCB78286A4796007F6626 /* Mock IgUITests */,
@@ -187,12 +194,16 @@
 		299EBABF286BA94600CD3DEF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				297D8650286CB1AF00C7FE95 /* PostCell.h */,
+				297D8651286CB1AF00C7FE95 /* PostCell.m */,
 				299E56C4286A4FFF0023CBEE /* ComposeViewController.h */,
 				299E56C5286A4FFF0023CBEE /* ComposeViewController.m */,
 				299E56C1286A4ED10023CBEE /* FeedViewController.h */,
 				299E56C2286A4ED10023CBEE /* FeedViewController.m */,
 				299E56BE286A4E600023CBEE /* LoginViewController.h */,
 				299E56BF286A4E600023CBEE /* LoginViewController.m */,
+				297D8656286CDA8700C7FE95 /* PostDetailsViewController.h */,
+				297D8657286CDA8700C7FE95 /* PostDetailsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -202,7 +213,6 @@
 			children = (
 				299EBABB286BA8F600CD3DEF /* Post.h */,
 				299EBABC286BA8F600CD3DEF /* Post.m */,
-				29A8A563286BFFEA00D6C598 /* Keys.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,11 +335,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297D865A286D068C00C7FE95 /* Keys.plist in Resources */,
 				297FCB63286A4796007F6626 /* LaunchScreen.storyboard in Resources */,
 				297FCB60286A4796007F6626 /* Assets.xcassets in Resources */,
 				297FCB5B286A4795007F6626 /* Main.storyboard in Resources */,
 				299EBAB7286BA19600CD3DEF /* Billabong.ttf in Resources */,
-				29A8A564286BFFEA00D6C598 /* Keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +474,9 @@
 				299E56C6286A4FFF0023CBEE /* ComposeViewController.m in Sources */,
 				299E56C3286A4ED10023CBEE /* FeedViewController.m in Sources */,
 				299E56C0286A4E600023CBEE /* LoginViewController.m in Sources */,
+				297D8658286CDA8700C7FE95 /* PostDetailsViewController.m in Sources */,
 				299EBABD286BA8F600CD3DEF /* Post.m in Sources */,
+				297D8652286CB1AF00C7FE95 /* PostCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

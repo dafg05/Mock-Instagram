@@ -39,8 +39,7 @@
     [self presentViewController:imagePickerVC animated:YES completion:nil];
 }
 - (IBAction)didTapCancel:(id)sender {
-    NSLog(@"here");
-    [self performSegueWithIdentifier:@"ComposeToFeedSegue" sender:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)didTapShare:(id)sender {
@@ -53,7 +52,7 @@
         else if (succeeded){
             NSLog(@"Succeeded posting image!");
             [MBProgressHUD hideHUDForView:self.view animated:YES];
-            [self performSegueWithIdentifier:@"ComposeToFeedSegue" sender:nil];
+            [self dismissViewControllerAnimated:YES completion:nil];
         }
     }];
 }
