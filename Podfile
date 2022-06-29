@@ -7,6 +7,7 @@ target 'Mock Ig' do
 
   # Pods for Mock Ig
   pod 'Parse'
+  pod 'MBProgressHUD'
 
   target 'Mock IgTests' do
     inherit! :search_paths

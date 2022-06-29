@@ -6,8 +6,12 @@
 //
 
 #import "ComposeViewController.h"
+#import "Post.h"
+#import "MBProgressHUD/MBProgressHUD.h"
 
-@interface ComposeViewController ()
+@interface ComposeViewController () 
+@property (weak, nonatomic) IBOutlet UIImageView *imagePickerView;
+@property (weak, nonatomic) IBOutlet UITextField *captionField;
 
 @end
 
@@ -15,15 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.imagePickerView setUserInteractionEnabled:YES];
 }
-- (IBAction)didTapCamera:(id)sender {
+
+- (IBAction)didTapImagePicker:(id)sender {
     UIImagePickerController *imagePickerVC = [UIImagePickerController new];
     imagePickerVC.delegate = self;
     imagePickerVC.allowsEditing = YES;
 
-    // The Xcode simulator does not support taking pictures, so let's first check that the camera is indeed supported on the device before trying to present it.
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        NSLog(@"Camera is available!!!");
         imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
     }
     else {
@@ -33,17 +38,49 @@
 
     [self presentViewController:imagePickerVC animated:YES completion:nil];
 }
+- (IBAction)didTapCancel:(id)sender {
+    NSLog(@"here");
+    [self performSegueWithIdentifier:@"ComposeToFeedSegue" sender:nil];
+}
+
+- (IBAction)didTapShare:(id)sender {
+    // TODO: handle no image selected
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [Post postUserImage:self.imagePickerView.image withCaption:self.captionField.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+        if (error != nil){
+            NSLog(@"Error when posting image: %@", error.localizedDescription);
+        }
+        else if (succeeded){
+            NSLog(@"Succeeded posting image!");
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+            [self performSegueWithIdentifier:@"ComposeToFeedSegue" sender:nil];
+        }
+    }];
+}
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     
-    // Get the image captured by the UIImagePickerController
-    UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
-    UIImage *editedImage = info[UIImagePickerControllerEditedImage];
+    UIImage *pickedImage = info[UIImagePickerControllerEditedImage];
+    UIImage *editedImage = [self resizeImage:pickedImage withSize:pickedImage.size];
 
-    // Do something with the images (based on your use case)
+    self.imagePickerView.backgroundColor = [UIColor systemBackgroundColor];
+    self.imagePickerView.image = editedImage;
     
-    // Dismiss UIImagePickerController to go back to your original view controller
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (UIImage *)resizeImage:(UIImage *)image withSize:(CGSize)size {
+    UIImageView *resizeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+    
+    resizeImageView.contentMode = UIViewContentModeScaleAspectFill;
+    resizeImageView.image = image;
+    
+    UIGraphicsBeginImageContext(size);
+    [resizeImageView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
 }
 
 /*
