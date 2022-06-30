@@ -6,10 +6,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Post.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol ComposeViewControllerDelegate
+
+- (void) didPost;
+
+@end
+
 @interface ComposeViewController : UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+
+@property (nonatomic, weak) id<ComposeViewControllerDelegate> delegate;
 
 @end
 

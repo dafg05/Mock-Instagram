@@ -51,7 +51,8 @@
             NSLog(@"Error when posting image: %@", error.localizedDescription);
         }
         else if (succeeded){
-            NSLog(@"Succeeded posting image!");
+            NSLog(@"Succeeded posted image!");
+            [self.delegate didPost];
             [MBProgressHUD hideHUDForView:self.view animated:YES];
             [self dismissViewControllerAnimated:YES completion:nil];
         }

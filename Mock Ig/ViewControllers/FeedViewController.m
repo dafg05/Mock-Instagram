@@ -11,8 +11,9 @@
 #import "LoginViewController.h"
 #import "PostCell.h"
 #import "PostDetailsViewController.h"
+#import "ComposeViewController.h"
 
-@interface FeedViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface FeedViewController () <UITableViewDataSource, UITableViewDelegate, ComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *postTableView;
 @property (strong, nonatomic) NSArray *postsArray;
@@ -31,6 +32,27 @@
     [refreshControl addTarget:self action:@selector(beginRefresh:) forControlEvents:UIControlEventValueChanged];
     [self.postTableView insertSubview:refreshControl atIndex:0];
     
+    PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+    [query includeKey:@"author"];
+    [query orderByDescending:@"createdAt"];
+    query.limit = 20;
+
+    [self queryPosts];
+//    // fetch data asynchronously
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
+//        if (posts != nil) {
+//            // do something with the array of object returned by the call
+////            self.postsArray = [NSMutableArray arrayWithArray:posts];
+//            self.postsArray = posts;
+//
+//            [self.postTableView reloadData];
+//        } else {
+//            NSLog(@"%@", error.localizedDescription);
+//        }
+//    }];
+}
+
+- (void)queryPosts{
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
     [query includeKey:@"author"];
     [query orderByDescending:@"createdAt"];
@@ -119,13 +141,21 @@
     [navigationController pushViewController: viewController animated:YES];
 }
 
-/*
+- (void)didPost{
+    NSLog(@"On didpost");
+    [self queryPosts];
+    [self.postTableView reloadData];
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    UINavigationController *navigationController = [segue destinationViewController];
+    ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
+        composeController.delegate = self;
+
 }
-*/
+
 @end
