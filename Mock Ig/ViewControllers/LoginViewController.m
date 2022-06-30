@@ -22,6 +22,8 @@ NSString * const EMPTY_FIELDS_ERROR_MSSG = @"Either your username or password is
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.usernameField.placeholder = @"Username";
+    self.passwordField.placeholder = @"Password";
     
     // Do any additional setup after loading the view.
 }

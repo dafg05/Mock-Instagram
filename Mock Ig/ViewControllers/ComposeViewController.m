@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.imagePickerView setUserInteractionEnabled:YES];
+    self.captionField.placeholder = @"Write your caption here...";
 }
 
 - (IBAction)didTapImagePicker:(id)sender {

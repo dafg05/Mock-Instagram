@@ -96,6 +96,11 @@
         }
         else{
             cell.postImageView.image = [UIImage imageWithData:imageData];
+            cell.usernameLabel.text = post.author.username;
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            dateFormatter.dateFormat = @"yyyy-MM-dd 'at' HH:mm";
+            NSString *dateString = [dateFormatter stringFromDate:post.createdAt];
+            cell.timestampLabel.text = dateString;
         }
     }];
     return cell;
