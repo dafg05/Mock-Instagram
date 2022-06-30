@@ -20,37 +20,34 @@ The following **optional** features are implemented:
 
 - [x] Run your app on your phone and use the camera to take the photo
 - [ ] User can load more posts once he or she reaches the bottom of the feed using infinite scrolling
-- [ ] Show the username and creation time for each post
+- [x] Show the username and creation time for each post
 - [ ] User can use a Tab Bar to switch between a Home Feed tab (all posts) and a Profile tab (only posts published by the current user)
 - User Profiles:
   - [ ] Allow the logged in user to add a profile photo
   - [ ] Display the profile photo with each post
   - [ ] Tapping on a post's username or profile photo goes to that user's profile page
-- [ ] After the user submits a new post, show a progress HUD while the post is being uploaded to Parse
+- [x] After the user submits a new post, show a progress HUD while the post is being uploaded to Parse
 - [ ] User can comment on a post and see all comments for each post in the post details screen
 - [ ] User can like a post and see number of likes for each post in the post details screen
-- [ ] Style the login page to look like the real Instagram login page
+- [x] Style the login page to look like the real Instagram login page
 - [ ] Style the feed to look like the real Instagram feed
 - [ ] Implement a custom camera view
 
 The following **additional** features are implemented:
 
 - [x] Users are alerted if there is a sign-up error or a login error; including if they input an empty username or password.
-- [x] Show progress HUD while post is being uploaded to parse
 - [x] API keys managed by Keys.plist
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Refactoring code to make queries from a single method
+2. Switching between camera view and photo gallery view
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [Kap](https://getkap.co/).
+https://imgur.com/a/8XYggdT
 
 ## Credits
 
@@ -64,7 +61,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [Daniel Flores Garcia]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
