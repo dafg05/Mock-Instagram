@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2947D112286E983F00E83C0E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2947D111286E983F00E83C0E /* ProfileViewController.m */; };
 		297D8652286CB1AF00C7FE95 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 297D8651286CB1AF00C7FE95 /* PostCell.m */; };
 		297D8658286CDA8700C7FE95 /* PostDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297D8657286CDA8700C7FE95 /* PostDetailsViewController.m */; };
 		297D865A286D068C00C7FE95 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297D8659286D068C00C7FE95 /* Keys.plist */; };
@@ -49,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		230B8047D878C1AF8F518170 /* Pods_Mock_Ig_Mock_IgUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mock_Ig_Mock_IgUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2947D110286E983F00E83C0E /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = "/Users/danielfloresg/cs/Mock Ig/Mock Ig/ViewControllers/ProfileViewController.h"; sourceTree = "<absolute>"; };
+		2947D111286E983F00E83C0E /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = "/Users/danielfloresg/cs/Mock Ig/Mock Ig/ViewControllers/ProfileViewController.m"; sourceTree = "<absolute>"; };
 		297D8650286CB1AF00C7FE95 /* PostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PostCell.h; path = "Mock Ig/ViewControllers/PostCell.h"; sourceTree = SOURCE_ROOT; };
 		297D8651286CB1AF00C7FE95 /* PostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PostCell.m; path = "Mock Ig/ViewControllers/PostCell.m"; sourceTree = SOURCE_ROOT; };
 		297D8656286CDA8700C7FE95 /* PostDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDetailsViewController.h; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 		299EBABF286BA94600CD3DEF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2947D110286E983F00E83C0E /* ProfileViewController.h */,
+				2947D111286E983F00E83C0E /* ProfileViewController.m */,
 				297D8650286CB1AF00C7FE95 /* PostCell.h */,
 				297D8651286CB1AF00C7FE95 /* PostCell.m */,
 				299E56C4286A4FFF0023CBEE /* ComposeViewController.h */,
@@ -475,6 +480,7 @@
 				299E56C3286A4ED10023CBEE /* FeedViewController.m in Sources */,
 				299E56C0286A4E600023CBEE /* LoginViewController.m in Sources */,
 				297D8658286CDA8700C7FE95 /* PostDetailsViewController.m in Sources */,
+				2947D112286E983F00E83C0E /* ProfileViewController.m in Sources */,
 				299EBABD286BA8F600CD3DEF /* Post.m in Sources */,
 				297D8652286CB1AF00C7FE95 /* PostCell.m in Sources */,
 			);

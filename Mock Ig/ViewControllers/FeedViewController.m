@@ -38,18 +38,6 @@
     query.limit = 20;
 
     [self queryPosts];
-//    // fetch data asynchronously
-//    [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
-//        if (posts != nil) {
-//            // do something with the array of object returned by the call
-////            self.postsArray = [NSMutableArray arrayWithArray:posts];
-//            self.postsArray = posts;
-//
-//            [self.postTableView reloadData];
-//        } else {
-//            NSLog(@"%@", error.localizedDescription);
-//        }
-//    }];
 }
 
 - (void)queryPosts{
@@ -142,7 +130,6 @@
 }
 
 - (void)didPost{
-    NSLog(@"On didpost");
     [self queryPosts];
     [self.postTableView reloadData];
 }

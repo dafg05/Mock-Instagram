@@ -25,7 +25,7 @@
             NSLog(@"Welcome back %@ 😀", user.username);
             
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-                UIViewController *chatNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"FeedNavigationController"];
+                UIViewController *chatNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
                 self.window.rootViewController = chatNavigationController;
         }
 }
