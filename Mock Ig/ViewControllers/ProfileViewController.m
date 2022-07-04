@@ -6,10 +6,15 @@
 //
 
 #import "ProfileViewController.h"
+#import "PostGridCell.h"
+#import "Post.h"
 
 @interface ProfileViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (weak, nonatomic) IBOutlet UIButton *selectImageButton;
+@property (weak, nonatomic) IBOutlet UICollectionView *postCollectionView;
+@property (strong, nonatomic) NSArray *postsArray;
 
 @end
 
@@ -17,8 +22,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // if no author was set by another view controller,
+    // then assume we're seguing into this vc through the tab bar
+    self.postCollectionView.dataSource = self;
     if (self.author == nil){
         self.author = [PFUser currentUser];
+    }
+    // make sure to remove the ability to change profile pics
+    // if this profile view is not from the current user.
+    // question: is this method exploitable?
+    else{
+        [self.selectImageButton removeFromSuperview];
     }
     self.usernameLabel.text = self.author[@"username"];
     PFFileObject *imageFile = self.author[@"profilePic"];
@@ -29,6 +43,7 @@
         self.profileImageView.image = [UIImage imageNamed:@"image_placeholder"];
     }
     self.profileImageView.layer.cornerRadius = 10;
+    [self queryPosts];
 }
 
 - (IBAction)didTapSelectPP:(id)sender {
@@ -69,6 +84,38 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)queryPosts{
+    PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+    [query includeKey:@"author"];
+    [query whereKey:@"author" equalTo:self.author];
+    [query orderByDescending:@"createdAt"];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
+        if (posts != nil) {
+            NSLog(@"Queried for posts!");
+            self.postsArray = posts;
+            [self.postCollectionView reloadData];
+        } else {
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
+    
+}
+
+- (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    PostGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PostGridCell" forIndexPath:indexPath];
+    Post *post = self.postsArray[indexPath.row];
+    cell.postImageView.image = [UIImage imageWithData:[post.image getData]];
+    return cell;
+    
+}
+
+- (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.postsArray.count;
+}
+
+
+
 /*
 #pragma mark - Navigation
 
@@ -78,5 +125,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

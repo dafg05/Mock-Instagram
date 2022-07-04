@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/danielfloresg/cs/Mock Ig/Mock Ig/ViewControllers/ProfileViewController.h">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/danielfloresg/cs/Mock Ig/Mock Ig/ViewControllers/ProfileViewController.m">
-   </FileRef>
-   <FileRef
       location = "group:Mock Ig.xcodeproj">
    </FileRef>
    <FileRef

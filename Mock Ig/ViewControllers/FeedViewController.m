@@ -33,10 +33,10 @@
     [refreshControl addTarget:self action:@selector(beginRefresh:) forControlEvents:UIControlEventValueChanged];
     [self.postTableView insertSubview:refreshControl atIndex:0];
     
-    PFQuery *query = [PFQuery queryWithClassName:@"Post"];
-    [query includeKey:@"author"];
-    [query orderByDescending:@"createdAt"];
-    query.limit = 20;
+//    PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+//    [query includeKey:@"author"];
+//    [query orderByDescending:@"createdAt"];
+//    query.limit = 20;
 
     [self queryPosts];
 }
@@ -51,7 +51,6 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
         if (posts != nil) {
             // do something with the array of object returned by the call
-//            self.postsArray = [NSMutableArray arrayWithArray:posts];
             self.postsArray = posts;
 
             [self.postTableView reloadData];
@@ -71,7 +70,7 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
         if (posts != nil) {
             // do something with the array of object returned by the call
-            self.postsArray = [NSMutableArray arrayWithArray:posts];
+            self.postsArray = posts;
             [self.postTableView reloadData];
             [refreshControl endRefreshing];
         } else {
