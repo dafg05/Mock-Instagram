@@ -230,19 +230,26 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w3Q-Ox-oKt">
-                                                    <rect key="frame" x="10" y="54" width="394" height="340"/>
+                                                    <rect key="frame" x="10" y="80" width="394" height="314"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="340" id="xLa-iE-ONd"/>
+                                                        <constraint firstAttribute="height" constant="300" id="xLa-iE-ONd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="FzJ-jo-5lw">
+                                                    <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="FzJ-jo-5lw" secondAttribute="height" multiplier="1:1" id="1YX-h5-SGK"/>
+                                                        <constraint firstAttribute="height" constant="60" id="BQg-JF-exX"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kw5-w6-7My">
-                                                    <rect key="frame" x="30" y="21" width="84" height="23"/>
+                                                    <rect key="frame" x="80" y="30" width="84" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="createdAt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB6-4Q-qVk">
-                                                    <rect key="frame" x="124" y="24" width="64" height="17"/>
+                                                    <rect key="frame" x="174" y="31.5" width="64" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
@@ -250,17 +257,20 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="w3Q-Ox-oKt" firstAttribute="leading" secondItem="2MD-x7-7fh" secondAttribute="leading" constant="10" id="0iD-Tr-nrk"/>
-                                                <constraint firstItem="kw5-w6-7My" firstAttribute="top" secondItem="2MD-x7-7fh" secondAttribute="topMargin" constant="10" id="3K9-7G-5qd"/>
-                                                <constraint firstItem="pB6-4Q-qVk" firstAttribute="centerY" secondItem="kw5-w6-7My" secondAttribute="centerY" id="4sD-7V-O1Z"/>
-                                                <constraint firstItem="pB6-4Q-qVk" firstAttribute="leading" secondItem="kw5-w6-7My" secondAttribute="trailing" constant="10" id="8Fn-Gg-tZD"/>
+                                                <constraint firstItem="kw5-w6-7My" firstAttribute="leading" secondItem="FzJ-jo-5lw" secondAttribute="trailing" constant="10" id="5XM-AE-X0x"/>
                                                 <constraint firstAttribute="bottom" secondItem="w3Q-Ox-oKt" secondAttribute="bottom" constant="10" id="FLn-0B-cnq"/>
-                                                <constraint firstItem="w3Q-Ox-oKt" firstAttribute="top" secondItem="kw5-w6-7My" secondAttribute="bottom" constant="10" id="Vgf-9W-OxT"/>
-                                                <constraint firstItem="kw5-w6-7My" firstAttribute="leading" secondItem="2MD-x7-7fh" secondAttribute="leadingMargin" constant="10" id="ZVd-DT-uxp"/>
+                                                <constraint firstItem="FzJ-jo-5lw" firstAttribute="top" secondItem="2MD-x7-7fh" secondAttribute="top" constant="10" id="L4Y-da-zmw"/>
+                                                <constraint firstItem="w3Q-Ox-oKt" firstAttribute="top" secondItem="FzJ-jo-5lw" secondAttribute="bottom" constant="10" id="XB5-1B-hOH"/>
+                                                <constraint firstItem="FzJ-jo-5lw" firstAttribute="leading" secondItem="2MD-x7-7fh" secondAttribute="leading" constant="10" id="a5j-7O-kjO"/>
                                                 <constraint firstAttribute="trailing" secondItem="w3Q-Ox-oKt" secondAttribute="trailing" constant="10" id="ggs-jO-kXd"/>
+                                                <constraint firstItem="pB6-4Q-qVk" firstAttribute="leading" secondItem="kw5-w6-7My" secondAttribute="trailing" constant="10" id="i7b-Mg-rwZ"/>
+                                                <constraint firstItem="pB6-4Q-qVk" firstAttribute="centerY" secondItem="FzJ-jo-5lw" secondAttribute="centerY" id="nDf-8h-NnW"/>
+                                                <constraint firstItem="kw5-w6-7My" firstAttribute="centerY" secondItem="FzJ-jo-5lw" secondAttribute="centerY" id="uQv-hE-ZJ6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="postImageView" destination="w3Q-Ox-oKt" id="Mou-v0-3Uz"/>
+                                            <outlet property="posterProfileImageView" destination="FzJ-jo-5lw" id="OIG-7l-uk8"/>
                                             <outlet property="timestampLabel" destination="pB6-4Q-qVk" id="usO-8i-nch"/>
                                             <outlet property="usernameLabel" destination="kw5-w6-7My" id="Qxu-RH-k34"/>
                                         </connections>
@@ -299,7 +309,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Compose"/>
                                 <connections>
-                                    <segue destination="hDb-qL-gEo" kind="presentation" id="j7t-lO-7mO"/>
+                                    <segue destination="hDb-qL-gEo" kind="presentation" identifier="ComposeSegue" id="j7t-lO-7mO"/>
                                 </connections>
                             </button>
                             <connections>
@@ -309,11 +319,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="postTableView" destination="GYC-7p-c30" id="SyN-Ih-20T"/>
+                        <segue destination="Ev8-hd-Pbp" kind="show" identifier="ProfileSegue" id="1Ra-ZJ-dHW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3JH-YJ-ML4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-191.30434782608697" y="784.82142857142856"/>
+            <point key="canvasLocation" x="-191" y="785"/>
         </scene>
         <!--Post Details View Controller-->
         <scene sceneID="9tt-NP-JyD">
@@ -510,6 +521,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bd7-mn-Fze" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" selectedImage="profile_tab" id="za9-zj-IU0"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="9L7-tD-Dms"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Cu-bo-D8a">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -524,8 +536,12 @@
             <point key="canvasLocation" x="2508.6956521739135" y="784.82142857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1Ra-ZJ-dHW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="profile_tab" width="25" height="25"/>
         <namedColor name="AccentColor">

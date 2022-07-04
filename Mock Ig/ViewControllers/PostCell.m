@@ -12,10 +12,16 @@
 @implementation PostCell
 
 
-//- (void)awakeFromNib {
-//    [super awakeFromNib];
-//    // Initialization code
-//}
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    UITapGestureRecognizer *profileTapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didTapUserProfile:)];
+    [self.posterProfileImageView addGestureRecognizer:profileTapGestureRecognizer];
+    [self.posterProfileImageView setUserInteractionEnabled:YES];
+}
+
+- (void) didTapUserProfile:(UITapGestureRecognizer *)sender{
+    [self.delegate postCell:self didTap:self.post.author];
+}
 //
 //- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
 //    [super setSelected:selected animated:animated];

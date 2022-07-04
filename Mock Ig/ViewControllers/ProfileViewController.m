@@ -6,12 +6,10 @@
 //
 
 #import "ProfileViewController.h"
-#import "Parse/Parse.h"
 
 @interface ProfileViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
-@property (weak, nonatomic) PFUser *author;
 
 @end
 
@@ -19,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.author = [PFUser currentUser];
+    if (self.author == nil){
+        self.author = [PFUser currentUser];
+    }
     self.usernameLabel.text = self.author[@"username"];
     PFFileObject *imageFile = self.author[@"profilePic"];
     if (imageFile){

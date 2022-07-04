@@ -12,8 +12,9 @@
 #import "PostCell.h"
 #import "PostDetailsViewController.h"
 #import "ComposeViewController.h"
+#import "ProfileViewController.h"
 
-@interface FeedViewController () <UITableViewDataSource, UITableViewDelegate, ComposeViewControllerDelegate>
+@interface FeedViewController () <UITableViewDataSource, UITableViewDelegate, ComposeViewControllerDelegate, PostCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *postTableView;
 @property (strong, nonatomic) NSArray *postsArray;
@@ -105,12 +106,22 @@
             NSLog(@"Error while fetching image data: %@", error.localizedDescription);
         }
         else{
+            cell.delegate = self;
+            cell.post = post;
             cell.postImageView.image = [UIImage imageWithData:imageData];
             cell.usernameLabel.text = post.author.username;
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
             dateFormatter.dateFormat = @"yyyy-MM-dd 'at' HH:mm";
             NSString *dateString = [dateFormatter stringFromDate:post.createdAt];
             cell.timestampLabel.text = dateString;
+            PFFileObject *pImageFile = post.author[@"profilePic"];
+            if (pImageFile){
+                cell.posterProfileImageView.image = [UIImage imageWithData:[pImageFile getData]];
+            }
+            else{
+                cell.posterProfileImageView.image = [UIImage imageNamed:@"image_placeholder"];
+            }
+            cell.posterProfileImageView.layer.cornerRadius = 10;
         }
     }];
     return cell;
@@ -134,14 +145,23 @@
     [self.postTableView reloadData];
 }
 
+-(void) postCell:(PostCell *)postCell didTap:(PFUser *)user{
+    [self performSegueWithIdentifier:@"ProfileSegue" sender:user];
+}
 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    UINavigationController *navigationController = [segue destinationViewController];
-    ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
+    if ([segue.identifier isEqualToString:@"ProfileSegue"]){
+        ProfileViewController *vc = [segue destinationViewController];
+        vc.author = sender;
+    }
+    if([segue.identifier isEqualToString:@"ComposeSegue"]){
+        UINavigationController *navigationController = [segue destinationViewController];
+        ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
         composeController.delegate = self;
+    }
 
 }
 
